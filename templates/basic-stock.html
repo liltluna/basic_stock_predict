@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Crypto Template & Dashboard</title>
+    <meta content="" name="description">
+    <meta content="" name="author">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="static/picture/favicon.png" type="image/x-icon">
+
+    <!-- CORE CSS FRAMEWORK - START -->
+    <link href="static/css/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="static/css/cryptocoins.css" rel="stylesheet" type="text/css">
+    <link href="static/css/cryptocoins.css" rel="stylesheet" type="text/css">
+    <link href="static/css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/perfect-scrollbar.css" rel="stylesheet" type="text/css">
+    <!-- CORE CSS FRAMEWORK - END -->
+
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START -->
+    <link href="static/css/jqcandlestick.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css" />
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+    <!-- CORE CSS TEMPLATE - START -->
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+    <!-- CORE CSS TEMPLATE - END -->
+    <script src="/static/js/echarts.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+
+
+
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class=" ">
+    <!-- START TOPBAR -->
+    <div class='page-topbar gradient-blue1'>
+        <div class='logo-area crypto'>
+        </div>
+        <div class='quick-area'>
+            <div class='pull-left'>
+                <ul class="info-menu left-links list-inline list-unstyled">
+                    <li class="sidebar-toggle-wrap">
+                        <a href="#" data-toggle="sidebar" class="sidebar_toggle">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="topnav-item active item2">
+                        <a href="#" class="nav-link w-text">
+                            <i class="fa fa-area-chart mr-10"></i>Reports
+                        </a>
+                    </li>
+
+                    <li class="hidden-sm hidden-xs searchform">
+                        <form action="#" method="post">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                                <input type="text" class="form-control animated fadeIn" placeholder="Search & Enter">
+                            </div>
+                            <input type='submit' value="">
+                        </form>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- END TOPBAR -->
+
+
+    <!-- START CONTAINER -->
+    <div class="page-container row-fluid container-fluid">
+        <!-- SIDEBAR - START -->
+
+        <div class="page-sidebar fixedscroll">
+
+            <!-- MAIN MENU - START -->
+            <div class="page-sidebar-wrapper crypto" id="main-menu-wrapper">
+
+                <ul class='wraplist'>
+                    <li class='menusection'>Main</li>
+
+                    <li class="open">
+                        <a href="">
+                            <i class="img">
+                                <img src="static/picture/4.png" alt="" class="width-20">
+                            </i>
+                            <span class="title">Index</span>
+                            <span class="label label-accent">HOT</span>
+                        </a>
+                    </li>
+
+                    <li class='menusection'>Data Visualization</li>
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="img">
+                                <img src="static/picture/16.png" alt="" class="width-20">
+                            </i>
+                            <span class="title">Echarts</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="/charts-echart-line">Line & Area Charts</a>
+                            </li>
+                            <li>
+                                <a class="" href="/charts-echart-bar">Bar & Stacked Charts</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- MAIN MENU - END -->
+
+        </div>
+        <!--  SIDEBAR - END -->
+
+        <!-- START CONTENT -->
+        <section id="main-content" class="">
+            <div class="wrapper main-wrapper row" style="">
+
+                <div class="col-xs-12">
+                    <div class="page-title">
+
+                        <div class="pull-left">
+                            <!-- PAGE HEADING TAG - START -->
+                            <h1 class="title"><strong>ZRETC PROJRCT</strong></h1>
+                            <!-- PAGE HEADING TAG - END -->
+                        </div>
+
+                        <div class="pull-right hidden-xs">
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="/"><i class="fa fa-home"></i>Home</a>
+                                </li>
+                                <li>
+                                    <a href="https://120.46.139.194/"><i></i>ZRETC</a>
+                                </li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="col-lg-12">
+                    <section class="box">
+                        <header class="panel_header">
+                            <h2 class="title pull-left">Stocks With Details</h2>
+                            <div class="actions panel_actions pull-right">
+                                <a class="box_toggle fa fa-chevron-down"></a>
+                            </div>
+                        </header>
+                        <div class="content-body">
+                            <div class="row">
+                                <div class="col-xs-12">
+
+                                    <div class="table-responsive" data-pattern="priority-columns">
+                                        <table id="tech-companies-1"
+                                            class="table vm trans table-small-font no-mb table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Symbol</th>
+                                                    <th>Name</th>
+                                                    <th>Aera</th>
+                                                    <th>Industry</th>
+                                                    <th>List Date</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                        <script>
+                                            $.ajax({
+                                                url: '/stockdetails',
+                                                method: 'post',
+                                                data: {},
+                                                dataType: 'json',
+                                                success: function (jsonObj) {
+
+                                                    $("#tech-companies-1 tbody").empty();
+
+                                                    for (i = 0; i < jsonObj.length; i++) {
+                                                        // 创建新行并插入表格
+                                                        var newRow = "<tr onclick=\"window.location='/stockdetailspage?symbol=" + jsonObj[i].symbol + "&name=" + encodeURIComponent(jsonObj[i].name) + "'\">" +
+                                                            "<td>" + jsonObj[i].symbol + "</td>" +
+                                                            "<td>" + jsonObj[i].name + "</td>" +
+                                                            "<td>" + jsonObj[i].area + "</td>" +
+                                                            "<td>" + jsonObj[i].industry + "</td>" +
+                                                            "<td>" + jsonObj[i].list_date + "</td>" +
+                                                            "</tr>";
+
+                                                        $("#tech-companies-1 tbody").append(newRow);
+                                                    }
+
+                                                }
+                                            });
+                                        </script>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+
+
+                <!-- MAIN CONTENT AREA ENDS -->
+            </div>
+        </section>
+        <!-- END CONTENT -->
+        <div class="page-chatapi hideit">
+
+
+
+            <div class="chat-wrapper">
+
+                <h4 class="group-head">Favourites</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row " id='chat_user_1' data-user-id='1'>
+                        <div class="user-img">
+                            <a href="#"><img src="static/picture/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Joge Lucky</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_2' data-user-id='2'>
+                        <div class="user-img">
+                            <a href="#"><img src="static/picture/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Folisise Chosiel</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_3' data-user-id='3'>
+                        <div class="user-img">
+                            <a href="#"><img src="static/picture/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Aron Gonzalez</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <h4 class="group-head">More Contacts</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row " id='chat_user_4' data-user-id='4'>
+                        <div class="user-img">
+                            <a href="#"><img src="static/picture/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Chris Fox</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_5' data-user-id='5'>
+                        <div class="user-img">
+                            <a href="#"><img src="static/picture/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Mogen Polish</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_6' data-user-id='6'>
+                        <div class="user-img">
+                            <a href="#"><img src="static/picture/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Smith Carter</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_7' data-user-id='7'>
+                        <div class="user-img">
+                            <a href="#"><img src="static/picture/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Amilia Gozenal</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_8' data-user-id='8'>
+                        <div class="user-img">
+                            <a href="#"><img src="static/picture/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Tahir Jemyship</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_9' data-user-id='9'>
+                        <div class="user-img">
+                            <a href="#"><img src="static/picture/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Johanson Wright</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_10' data-user-id='10'>
+                        <div class="user-img">
+                            <a href="#"><img src="static/picture/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Loni Tindall</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_11' data-user-id='11'>
+                        <div class="user-img">
+                            <a href="#"><img src="static/picture/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Natcho Herlaey</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_12' data-user-id='12'>
+                        <div class="user-img">
+                            <a href="#"><img src="static/picture/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Shakira Swedan</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="chatapi-windows ">
+
+        </div>
+    </div>
+    <!-- END CONTAINER -->
+    <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
+
+    <!-- CORE JS FRAMEWORK - START -->
+    <script src="static/js/jquery-1.11.2.min.js"></script>
+    <script src="static/js/jquery.easing.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/pace.min.js"></script>
+    <script src="static/js/perfect-scrollbar.min.js"></script>
+    <script src="static/js/viewportchecker.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="static/js/jquery-1.11.2.min.js"><\/script>');
+    </script>
+    <!-- CORE JS FRAMEWORK - END -->
+
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
+
+    <script src="static/js/Chart.min.js"></script>
+    <script src="static/js/jquery.syotimer.min.js"></script>
+    <script src="static/js/syotimer-ini.js"></script>
+    <script src="static/js/dashboard-crypto.js"></script>
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+
+    <!-- CORE TEMPLATE JS - START -->
+    <script src="static/js/scripts.js"></script>
+    <!-- END CORE TEMPLATE JS - END -->
+
+</body>
+
+</html>
