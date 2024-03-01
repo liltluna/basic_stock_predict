@@ -1,2 +1,2 @@
 # stock-predict
-graduation project
+ZRETC project
